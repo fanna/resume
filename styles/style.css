@@ -1,93 +1,143 @@
-h6 { 
-    font-family: 'Source Sans Pro', sans-serif; 
-    font-size: 10px; 
-    line-height: 18px; 
-    color: #666; 
-}
-h5 { 
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px; 
-    line-height: 18px; 
-    color: #666; 
-}
-h4 {
-    font-family: 'Source Sans Pro', sans-serif; 
-    font-size: 12px; 
-    line-height: 18px; 
-    color: #666;
- }
-h3 { 
-    font-family: 'Source Sans Pro', sans-serif; 
-    font-size: 12px; 
-    line-height: 18px;  
-}
-h2 { 
-    font-family: Helvetica, sans-serif; 
-    font-size: 15px; 
-    line-height: 18px; 
-}
-h1 { 
-    font-family: Helvetica, sans-serif; 
-    font-size: 17px; 
-    line-height: 18px; 
-}
-p { 
-    font-family: 'Source Sans Pro';
-     font-size: 12px;
-}
-li { 
-    list-style-type: none; 
-    font-family: 'Source Sans Pro'; 
-    font-size: 12px; 
+@font-face {
+    font-family: "DejaVu Sans Mono for Powerline";
+    src: local("DejaVu Sans Mono for Powerline"),
+         local("DejaVu Sans Mono for Powerline"),
+         url("fonts/DejaVu Sans Mono for Powerline.ttf");
 }
 
-#resume {
-    display: table;
-    width: 100%;
+@font-face {
+    font-family: "DejaVu Sans Mono Bold for Powerline";
+    font-weight: bold;
+    src: local("DejaVu Sans Mono Bold for Powerline"),
+         local("DejaVu Sans Mono Bold for Powerline"),
+         url("fonts/DejaVu Sans Mono Bold for Powerline.ttf");
 }
 
-#name {
-    margin-left: 3%
+html {
+    background-color: #ffffff;
+    color: black;
+    font-family: "DejaVu Sans Mono for Powerline", monospace;
 }
 
-#title {
-    margin-left: 3%
+@media (min-width: 42em) { body { width: 40em; } }
+@media (min-width: 72ch) { body { width: 70ch; } }
+
+body {
+    margin: auto;
 }
 
-#sidebar {
-    margin-left: 2%;
-    background-color: #f2f2f2;
-    position: absolute;
-    left: 0px;
-    width: 30%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+#container {
+    padding: 0.5em;
+    padding: 1ch;
+    padding-right: 0.75em;
+    padding-right: 1.5ch;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
-#main {
-    margin-right: 5%;
-    position: absolute;
-    right: 0px;
-    width: 60%;
+@media (max-width: 42em) {
+    html {
+        background-color: rgb(255, 255, 255);
+    }
+
+    body {
+        width: 90%;
+        width: calc(100% - 2em);
+    }
+
+    #container {
+        height: 100%;
+        padding: 0;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        margin: auto;
+        box-shadow: none;
+    }
 }
 
-#contact {
-    margin-top: 50%;
-    margin-left: 10%;
+a {
+    transition: 0.1s color;
+    color: #000000;
+    text-decoration: none;
 }
 
-#phone {
-    margin-left: 10%;
+a:focus {
+    outline: 2px dotted rgb(223, 174, 12);
+    outline-offset: 1px;
 }
 
-#email {
-    margin-left: 10%;
+a:hover {
+    cursor: pointer;
+    color: rgb(223, 174, 12);
 }
 
-.main {
-    margin-top: 3%;
-    margin-left: 2%;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+small {
+    color: #4CAF50;
+    font-weight: light;
+    font-size: 0.8rem;
+}
+
+h2::before {
+    content: "λ ";
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    background: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+}
+
+h3 {
+    color: rgb(5, 202, 209);
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 0.2em;
+    padding: 0;
+}
+
+h5 {
+    color: black;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin-top: 0.2em;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 1.2em;
+    /* list-style-type: " - "; */
+    list-style: upper-roman;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.8em;
+    font-size: 0.8em;
+}
+
+li {
+    font-size: 0.8em;
+}
+
+li p {
+    margin-bottom: 0;
+}
+
+p:hover {
+    font-size: 0.9em;
 }
