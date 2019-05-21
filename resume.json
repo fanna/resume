@@ -67,7 +67,7 @@
     ],
     "interests": [
         {
-            "name": "Programming"
+            "name": "Open Source Tech"
         },
         {
             "name": "Computer Graphics"
@@ -76,26 +76,17 @@
             "name": "Game Development"
         },
         {
-            "name": "Gaming"
+            "name": "Procedural Generation"
         },
         {
-            "name": "Art"
-        },
-        {
-            "name": "Music"
-        },
-        {
-            "name": "Travel"
-        },
-        {
-            "name": "Books"
+            "name": "D&D and other Fantasy Worlds"
         }
     ],
     "work": [
         {
             "position": "3D Developer at Vectary",
             "period": "April 2018 - Now",
-            "description": "Mainly working on Vectary core graphics engine and geometry converting tools. Making real-time multi-user collaboration mode and project lead on 3D HTML Viewer Embed. Using techonologies such as TypeScript, THREE.js, PlayCanvas, WebRTC, Gulp, WebComponents"
+            "description": "Working on Vectary core graphics engine and geometry converting tools. Making real-time multi-user collaboration mode and project lead on 3D HTML Viewer Embed. Using techonologies such as TypeScript, THREE.js, PlayCanvas, WebRTC, Gulp, WebComponents"
         },
         {
             "position": "Game Developer at Ready Makers, Inc.",
@@ -132,7 +123,7 @@
         {
             "date": "May 2015",
             "location": "Rendered Text Hackathon - Novi Sad, Serbia",
-            "description": "Won 4th place. Web application for Elixir code static analysis using Elixir and Phoenix framework."
+            "description": "Web application for Elixir code static analysis using Elixir and Phoenix framework."
         },
         {
             "date": "April 2015",
@@ -155,19 +146,12 @@
             "title": "Bachelor With Honours in Computer Graphics",
             "thesis": "Interactive Generative Sound Visualization",
             "description": "Creating interactive generative sound visualization using Kinect and Processing Framework"
-        },
-        {
-            "period": "2008 - 2012",
-            "location": "Karlovci grammar school - Sremski Karlovci, Serbia",
-            "title": "High school education in humanities, social sciences and foreign languages.",
-            "thesis": "Cyber security in Modern Age",
-            "description": "Theory behind various cyber security issues in modern age."
         }
     ],
     "social": [
         {
             "name": "Website",
-            "link": "whitetower.info"
+            "link": "http://whitetower.info"
         },
         {
             "name": "github",
@@ -179,7 +163,7 @@
         },
         {
             "name": "itch.io",
-            "link": "fanna.itch.io"
+            "link": "https://fanna.itch.io"
         },
         {
             "name": "linkedin",

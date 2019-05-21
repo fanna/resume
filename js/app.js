@@ -6,51 +6,48 @@ async function app() {
     const resume = JSON.parse(json);
 
     console.log(resume);
-    // const div = document.getElementById("resume");
-    const main = document.getElementById("main");
+    const main = document.getElementById("container");
 
-    const sidebar = document.getElementById("sidebar");
-    Elements.titleElement(main, "h1", "name", resume.name);
-    Elements.titleElement(main, "h2", "title", resume.title);
-    Elements.titleElement(sidebar, "h4", "contact", "Contact:");
-    Elements.titleElement(sidebar, "h5", "phone", resume.contact.phone);
-    Elements.titleElement(sidebar, "h5", "email", resume.contact.email);
-    Elements.listElement(sidebar, "ul", resume.programming.languages, "name", "Programming Languages:");
-    Elements.listElement(sidebar, "ul", resume.languages, "language", "Language Skills:");
-    Elements.listElement(sidebar, "ul", resume.interests, "name", "Interests");
+    Elements.titleElement(container, "h1", "name", resume.name.toLowerCase());
+    Elements.titleElement(container, "h1", "title", resume.title.toLowerCase());
+    Elements.titleElement(container, "h3", "contact", "contact:");
+    Elements.titleElement(container, "p", "phone", resume.contact.phone);
+    Elements.titleElement(container, "p", "email", resume.contact.email);
+    Elements.listElement(container, "ul", resume.social, "link", "Social:", true);
 
     const workKeys = [
-        {"type": "p", "id": "position"},
-        {"type": "p", "id": "period"},
+        {"type": "h3", "id": "position"},
+        {"type": "h5", "id": "period"},
         {"type": "p", "id": "description"}
     ];
-    Elements.contentElement(main, resume.work, workKeys, "main", "Work Experience:");
-
-    const workshopKeys = [
-        {"type": "p", "id": "date"},
-        {"type": "p", "id": "location"},
-        {"type": "p", "id": "description"}
-    ];
-    Elements.contentElement(main, resume.workshops, workshopKeys, "main", "Workshops and Seminars:");
+    Elements.contentElement(container, resume.work, workKeys, "main", "work experience:");
 
     const volunteeringKeys = [
-        {"type": "p", "id": "date"},
-        {"type": "p", "id": "location"},
-        {"type": "p", "id": "position"},
+        {"type": "h3", "id": "date"},
+        {"type": "h5", "id": "location"},
+        {"type": "h5", "id": "position"},
         {"type": "p", "id": "description"}
     ];
-    Elements.contentElement(main, resume.volunteering, volunteeringKeys, "main", "Volunteering:");
+    Elements.contentElement(container, resume.volunteering, volunteeringKeys, "main", "volunteering:");
+
+    const workshopKeys = [
+        {"type": "h3", "id": "date"},
+        {"type": "h5", "id": "location"},
+        {"type": "p", "id": "description"}
+    ];
+    Elements.contentElement(container, resume.workshops, workshopKeys, "main", "hackathons and workshops:");
 
     const educationKeys = [
-        {"type": "p", "id": "period"},
-        {"type": "p", "id": "location"},
-        {"type": "p", "id": "title"},
-        {"type": "p", "id": "thesis"},
-        {"type": "p", "id": "description"}
+        {"type": "h3", "id": "period"},
+        {"type": "h3", "id": "location"},
+        {"type": "h5", "id": "title"},
+        {"type": "h5", "id": "thesis"},
     ];
-    Elements.contentElement(main, resume.education, educationKeys, "main", "Education:");
+    Elements.contentElement(container, resume.education, educationKeys, "main", "education:");
 
-    Elements.listElement(sidebar, "ul", resume.social, "link", "Social:");
+    Elements.listElement(container, "ul", resume.programming.languages, "name", "programming languages:");
+    Elements.listElement(container, "ul", resume.languages, "language", "language skills:");
+    Elements.listElement(container, "ul", resume.interests, "name", "interests");
 }
 
 app();

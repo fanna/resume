@@ -7,7 +7,7 @@ export class Elements {
         parent.appendChild(element);
     }
 
-    static async listElement(parent, type, list, key, title) {
+    static async listElement(parent, type, list, key, title, isLink = false) {
         const element = document.createElement(type);
         const titleElement = document.createElement("h3");
         titleElement.append(title);
@@ -15,7 +15,15 @@ export class Elements {
 
         list.forEach(item => {
             const listItem = document.createElement("li");
-            listItem.append(item[key]);
+            if (isLink) {
+                const link = document.createElement("a");
+                link.href = item[key];
+                link.target = "_blank"
+                link.append(item[key]);
+                listItem.append(link);
+            } else {
+                listItem.append(item[key].toLowerCase());
+            }
             element.appendChild(listItem);
         });
 
@@ -24,14 +32,18 @@ export class Elements {
 
     static async contentElement(parent, contents, keys, className, title) {
         const element = document.createElement("div");
-        const titleElement = document.createElement("h3");
+        const titleElement = document.createElement("h2");
         titleElement.append(title);
         element.appendChild(titleElement);
 
         contents.forEach(item => {
             keys.forEach(key => {
                 const innerElement = document.createElement(key.type);
-                innerElement.append(item[key.id]);
+                if (key.id === "thesis") {
+                    innerElement.append(`Thesis title: ${item[key.id]}`);
+                } else {
+                    innerElement.append(item[key.id]);
+                }
                 element.appendChild(innerElement);
             });
         });
