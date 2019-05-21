@@ -10,8 +10,8 @@ async function app() {
     const main = document.getElementById("main");
 
     const sidebar = document.getElementById("sidebar");
-    Elements.titleElement(main, "h2", "name", resume.name);
-    Elements.titleElement(main, "h3", "title", resume.title);
+    Elements.titleElement(main, "h1", "name", resume.name);
+    Elements.titleElement(main, "h2", "title", resume.title);
     Elements.titleElement(sidebar, "h4", "contact", "Contact:");
     Elements.titleElement(sidebar, "h5", "phone", resume.contact.phone);
     Elements.titleElement(sidebar, "h5", "email", resume.contact.email);
