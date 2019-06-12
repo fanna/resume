@@ -5,7 +5,7 @@
 http-server -p 2222
 ```
 
-Visit `localhosst:2222'
+Visit `localhost:2222'
 
 ## Install
 
