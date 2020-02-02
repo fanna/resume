@@ -20,6 +20,10 @@
                 "level": 80
             },
             {
+                "name": "Rust",
+                "level": 75
+            },
+            {
                 "name": "Python",
                 "level": 70
             },
@@ -55,14 +59,6 @@
         {
             "language": "English",
             "level": "C2"
-        },
-        {
-            "language": "Slovak",
-            "level": "A1"
-        },
-        {
-            "language": "Russian",
-            "level": "A1"
         }
     ],
     "interests": [
@@ -86,7 +82,12 @@
         {
             "position": "3D Developer at Vectary",
             "period": "April 2018 - Now",
-            "description": "Working on Vectary core graphics engine and geometry converting tools. Making real-time multi-user collaboration mode and project lead on 3D HTML Viewer Embed. Using techonologies such as TypeScript, THREE.js, PlayCanvas, WebRTC, Gulp, WebComponents"
+            "description": "Working on Vectary core graphics engine and geometry converting tools. Making real-time multi-user collaboration mode and project lead on 3D HTML Viewer Embed. Lead developer on Figma and Sketch 3D viewer plugins. Using techonologies such as TypeScript, THREE.js, PlayCanvas, WebRTC, Gulp, WebComponents"
+        },
+        {
+            "position": "Founder at Wizux OÜ",
+            "period": "December 2019 - Now",
+            "description": "Providing software solutions for B2B customers worldwide. Currently working on SaferSun as back-end engineer. Using technologies such as Rust, Tokio, Protocol Buffers, Kafka etc."
         },
         {
             "position": "Game Developer at Ready Makers, Inc.",
@@ -96,12 +97,12 @@
         {
             "position": "Junior Software Engineer at Rendered Text",
             "period": "May 2016 - October 2017",
-            "description": "Working on both back-end and front-end part of SemaphoreCl. Working on Continous Integration platform used by thousands of developers worldwide. Decomposing monolith application to microservices using Elixir, Ruby, AWS and Docker. Technologies used daily: Git, Linux, Shell, RSpec, Cucumber, ExSpec, PostgreSQL, etc."
+            "description": "Working on both back-end and front-end part of SemaphoreCI. Working on Continous Integration platform used by thousands of developers worldwide. Decomposing monolith application to microservices using Elixir, Ruby, AWS and Docker. Technologies used daily: Git, Linux, Shell, RSpec, Cucumber, ExSpec, PostgreSQL, etc."
         },
         {
             "position": "Internship at Rendered Text",
             "period": "July - October 2015",
-            "description": "Part of SemaphoreCl Infrastructure Team. Creating the persistent log system using Ruby on Rails and Sinatra. Using behaviour-driven and test-driven development on daily basis"
+            "description": "Part of SemaphoreCI Infrastructure Team. Creating the persistent log system using Ruby on Rails and Sinatra. Using behaviour-driven and test-driven development on daily basis"
         }
     ],
     "workshops": [
