@@ -12,19 +12,19 @@
                 "level": 90
             },
             {
-                "name": "Ruby",
+                "name": "Python",
                 "level": 90
             },
             {
-                "name": "Elixir",
+                "name": "Rust",
                 "level": 80
             },
             {
-                "name": "Rust",
+                "name": "Ruby",
                 "level": 75
             },
             {
-                "name": "Python",
+                "name": "Elixir",
                 "level": 70
             },
             {
@@ -80,8 +80,18 @@
     ],
     "work": [
         {
+            "position": "Freelance Software Engineer at Seges",
+            "period": "April 2020 - Now",
+            "description": "Working on web-based projects for multiple clients. Work in YesElf core team. Using technologies such as WebGL, React, Django, PostgreSQL, ExpressJS"
+        },
+        {
+            "position": "Freelance Game Developer at BAIT",
+            "period": "December 2019 - June 2020",
+            "description": "Working on multiplayer backend services for Unity based game in Rust. Game development of idle game using Unity game engine"
+        },
+        {
             "position": "3D Developer at Vectary",
-            "period": "April 2018 - Now",
+            "period": "April 2018 - March 2020",
             "description": "Working on Vectary core graphics engine and geometry converting tools. Making real-time multi-user collaboration mode and project lead on 3D HTML Viewer Embed. Lead developer on Figma and Sketch 3D viewer plugins. Using techonologies such as TypeScript, THREE.js, PlayCanvas, WebRTC, Gulp, WebComponents"
         },
         {
